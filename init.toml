@@ -33,6 +33,8 @@
   autocomplete_method = "coc"
   bootstrap_before = "myspacevim#before"
   bootstrap_after = "myspacevim#after"
+  filemanager = "defx"
+  snippet_engine = "ultisnips"
 
 # Enable autocomplete layer
 [[layers]]
@@ -93,3 +95,9 @@
 [[custom_plugins]]
   name = "jxnblk/vim-mdx-js"
   merged = false
+
+[[custom_plugins]]
+  name = "reasonml-editor/vim-reason-plus"
+
+[[layers]]
+  name = "ctrlspace"

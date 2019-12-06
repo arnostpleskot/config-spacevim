@@ -13,8 +13,11 @@ function! myspacevim#before() abort
   \   '*': ['remove_trailing_lines', 'trim_whitespace'],
   \   'javascript': ['eslint', 'prettier'],
   \   'typescript': ['eslint', 'prettier'],
+  \   'typescriptreact': ['eslint', 'prettier'],
   \   'markdown': ['prettier']
   \}
+  " Make ALE only linter for TS
+  let g:nvim_typescript#diagnosticsEnable = 0
 endfunction
 
 function! myspacevim#after() abort
